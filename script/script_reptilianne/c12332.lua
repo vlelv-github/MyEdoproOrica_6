@@ -84,7 +84,7 @@ function s.condition(e)
 end
 
 function s.atrfilter(c,tp,rp)
-	return c:IsPreviousPosition(POS_FACEUP) and c:GetPreviousAttackOnField()==0
+	return c:IsPreviousLocation(LOCATION_MZONE) and c:IsPreviousPosition(POS_FACEUP) and c:GetPreviousAttackOnField()==0
 end
 function s.thfilter(c)
 	return c:IsSetCard(SET_REPTILIANNE) and c:IsAbleToHand()
